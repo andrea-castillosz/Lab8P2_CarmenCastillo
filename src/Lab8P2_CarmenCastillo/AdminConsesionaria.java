@@ -41,6 +41,10 @@ public class AdminConsesionaria {
         this.archivo = archivo;
     }
     
+    public void setCon(Consesionaria c){
+        listaConses.add(c);
+    }
+    
     public void cargarArchivo() {
         try {            
             listaConses = new ArrayList();

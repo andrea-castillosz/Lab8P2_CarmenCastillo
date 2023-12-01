@@ -5,6 +5,7 @@
 package Lab8P2_CarmenCastillo;
 
 import java.awt.Color;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -12,7 +13,9 @@ import java.util.Date;
  *
  * @author casti
  */
-public class Carro {
+public class Carro implements Serializable{
+    
+    private static final long SerialVersionUID=777L;
     
     private Date FechaFabric;
     private String Marca;

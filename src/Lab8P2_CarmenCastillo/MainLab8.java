@@ -920,7 +920,13 @@ public class MainLab8 extends javax.swing.JFrame {
             if (txtf_UsuarioCC.getText().equals("") || txtf_ContraCC.getText().equals("") || txtf_NombreCC.getText().equals("") || txtf_CorreoCC.getText().equals("") || txtf_PaisRCC.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "¡Información incompleta!\nFaltan datos para crear usuario");
             } else {
-                jugadores.add(new Usuarios(nombr, corre, pais, usuario, contrase, 150000, fechaN));
+                Usuarios u = new Usuarios(nombr, corre, pais, usuario, contrase, 150000, fechaN);
+
+                AdminUsuarios aUse = new AdminUsuarios("./Usuarios.usr"); //extension propia
+                aUse.cargarArchivo();
+                aUse.setUsuario(u);
+                aUse.escribirArchivo();
+
                 JOptionPane.showMessageDialog(null, "¡Usuario creado exitosamente!");
                 txtf_UsuarioCC.setText("");
                 txtf_ContraCC.setText("");
@@ -955,8 +961,13 @@ public class MainLab8 extends javax.swing.JFrame {
         String nombr = txtf_nombreCon.getText();
         Object pais = cb_localCon.getSelectedItem();
 
-        Consesionaria nuevaCon = new Consesionaria(nombr, (String) pais);
-        palabraconC.add(nuevaCon);
+        Consesionaria nCon = new Consesionaria(nombr, (String) pais);
+
+        AdminConsesionaria aCon = new AdminConsesionaria("./Usuarios.usr"); //extension propia
+        aCon.cargarArchivo();
+        aCon.setCarro(nCon);
+        aCon.escribirArchivo();
+
     }//GEN-LAST:event_btn_CrearConMouseClicked
 
     private void btn_Regresarmod4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Regresarmod4MouseClicked
@@ -1049,7 +1060,7 @@ public class MainLab8 extends javax.swing.JFrame {
         cb_marcaCarro.setModel(modelo);
 
     }
-    
+
     private void llenarcombi2() {
         cb_modeloCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
 
@@ -1149,7 +1160,6 @@ public class MainLab8 extends javax.swing.JFrame {
 //            ex.printStackTrace();
 //        }
 //    }
-
     public static boolean validarContrasena(String contrasena) {
 
         String regex = "^[a-zA-Z0-9-_&$%@]*$";
@@ -1158,7 +1168,7 @@ public class MainLab8 extends javax.swing.JFrame {
 
         return matcher.matches();
     }
-    
+
     /**
      * @param args the command line arguments
      */

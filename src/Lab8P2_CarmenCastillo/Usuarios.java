@@ -4,6 +4,7 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -11,7 +12,9 @@ import java.util.Date;
  *
  * @author casti
  */
-public class Usuarios {
+public class Usuarios implements Serializable {
+    
+    private static final long SerialVersionUID=777L;
     
     String nombre;
     String correo;

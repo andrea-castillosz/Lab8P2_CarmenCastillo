@@ -4,11 +4,15 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author casti
  */
-public class Circuitos {
+public class Circuitos implements Serializable{
+    
+    private static final long SerialVersionUID=777L;
     
     private double Longitud;
     private String Location;

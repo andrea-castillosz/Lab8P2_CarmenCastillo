@@ -4,11 +4,15 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author casti
  */
-public class Partes {
+public class Partes implements Serializable{
+    
+    private static final long SerialVersionUID=777L;
     
     private String Marca;
     private String Clasificacion;

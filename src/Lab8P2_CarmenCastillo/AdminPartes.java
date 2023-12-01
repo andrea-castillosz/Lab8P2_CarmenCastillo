@@ -41,6 +41,10 @@ public class AdminPartes {
         this.archivo = archivo;
     }
     
+    public void setParte(Partes c){
+        listaPartes.add(c);
+    }
+    
     public void cargarArchivo() {
         try {            
             listaPartes = new ArrayList();

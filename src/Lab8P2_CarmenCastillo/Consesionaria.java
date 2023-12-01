@@ -4,13 +4,16 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author casti
  */
-public class Consesionaria {
+public class Consesionaria implements Serializable{
+    
+    private static final long SerialVersionUID=777L;
 
     private String Nombre;
     private String Locación;

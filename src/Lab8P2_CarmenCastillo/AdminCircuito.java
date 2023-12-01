@@ -41,6 +41,10 @@ public class AdminCircuito {
         this.archivo = archivo;
     }
     
+    public void setCircuito(Circuitos c){
+        listaCircuito.add(c);
+    }
+    
     public void cargarArchivo() {
         try {            
             listaCircuito = new ArrayList();

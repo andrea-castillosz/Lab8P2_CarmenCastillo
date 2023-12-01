@@ -41,6 +41,10 @@ public class AdminUsuarios {
         this.archivo = archivo;
     }
     
+    public void setUsuario(Usuarios c){
+        listaUsuarios.add(c);
+    }
+    
     public void cargarArchivo() {
         try {            
             listaUsuarios = new ArrayList();
