@@ -70,7 +70,7 @@ public class MainLab8 extends javax.swing.JFrame {
         btn_Regresarmod4 = new javax.swing.JButton();
         title5 = new javax.swing.JLabel();
         userLabel35 = new javax.swing.JLabel();
-        jDC_FechaNaCC1 = new com.toedter.calendar.JDateChooser();
+        jDC_FechaFab = new com.toedter.calendar.JDateChooser();
         userLabel36 = new javax.swing.JLabel();
         jSeparator23 = new javax.swing.JSeparator();
         jSeparator24 = new javax.swing.JSeparator();
@@ -84,6 +84,7 @@ public class MainLab8 extends javax.swing.JFrame {
         userLabel40 = new javax.swing.JLabel();
         cb_consen = new javax.swing.JComboBox<>();
         jSeparator27 = new javax.swing.JSeparator();
+        btn_CrearCon1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         btn_Regresarmod5 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -486,6 +487,15 @@ public class MainLab8 extends javax.swing.JFrame {
             }
         });
 
+        btn_CrearCon1.setBackground(new java.awt.Color(0, 0, 0));
+        btn_CrearCon1.setForeground(new java.awt.Color(255, 255, 255));
+        btn_CrearCon1.setText("Crear Carro");
+        btn_CrearCon1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_CrearCon1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -503,13 +513,15 @@ public class MainLab8 extends javax.swing.JFrame {
                             .addComponent(userLabel35)
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jDC_FechaNaCC1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jDC_FechaFab, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(127, 127, 127)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(userLabel38)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(83, 83, 83))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -541,7 +553,7 @@ public class MainLab8 extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(userLabel35)
                         .addGap(18, 18, 18)
-                        .addComponent(jDC_FechaNaCC1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jDC_FechaFab, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
@@ -567,8 +579,13 @@ public class MainLab8 extends javax.swing.JFrame {
                 .addGap(4, 4, 4)
                 .addComponent(cb_marcaCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(80, 80, 80))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jSeparator25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59))))
         );
 
         jTabbedPane2.addTab("Agregar Carro", jPanel8);
@@ -995,6 +1012,13 @@ public class MainLab8 extends javax.swing.JFrame {
         this.setVisible(true);
     }//GEN-LAST:event_btn_Regresarmod4MouseClicked
 
+    private void btn_CrearCon1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CrearCon1MouseClicked
+        
+        Date fech = jDC_FechaFab.getDate();
+        
+        
+    }//GEN-LAST:event_btn_CrearCon1MouseClicked
+
     private void llenarcomboCons() {
         cb_consen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
         AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); //extension propia
@@ -1226,6 +1250,7 @@ public class MainLab8 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_CrearCon;
+    private javax.swing.JButton btn_CrearCon1;
     private javax.swing.JButton btn_CrearCuenta;
     private javax.swing.JButton btn_CrearCuentaCC;
     private javax.swing.JButton btn_IS;
@@ -1241,8 +1266,8 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cb_modeloCarro;
     private javax.swing.JComboBox<String> cb_paisCarro;
     private javax.swing.JLabel comprobPassword;
+    private com.toedter.calendar.JDateChooser jDC_FechaFab;
     private com.toedter.calendar.JDateChooser jDC_FechaNaCC;
-    private com.toedter.calendar.JDateChooser jDC_FechaNaCC1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

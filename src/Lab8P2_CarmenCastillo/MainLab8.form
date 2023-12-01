@@ -597,15 +597,18 @@
                                       <Component id="userLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                           <Component id="jSeparator24" alignment="1" min="-2" pref="333" max="-2" attributes="0"/>
-                                          <Component id="jDC_FechaNaCC1" alignment="0" min="-2" pref="333" max="-2" attributes="0"/>
+                                          <Component id="jDC_FechaFab" alignment="0" min="-2" pref="333" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="userLabel38" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                          <Component id="jSeparator26" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="cb_modeloCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="btn_CrearCon1" min="-2" pref="177" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="jSeparator26" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="cb_modeloCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
@@ -651,7 +654,7 @@
                               <Group type="102" attributes="0">
                                   <Component id="userLabel35" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jDC_FechaNaCC1" min="-2" pref="32" max="-2" attributes="0"/>
+                                  <Component id="jDC_FechaFab" min="-2" pref="32" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator24" min="-2" pref="26" max="-2" attributes="0"/>
                               </Group>
@@ -680,8 +683,16 @@
                           <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                           <Component id="cb_marcaCarro" min="-2" pref="38" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jSeparator25" min="-2" pref="26" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="jSeparator25" min="-2" pref="26" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="btn_CrearCon1" min="-2" pref="35" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -723,7 +734,7 @@
                     <Property name="text" type="java.lang.String" value="FECHA DE FABRICACION"/>
                   </Properties>
                 </Component>
-                <Component class="com.toedter.calendar.JDateChooser" name="jDC_FechaNaCC1">
+                <Component class="com.toedter.calendar.JDateChooser" name="jDC_FechaFab">
                 </Component>
                 <Component class="javax.swing.JLabel" name="userLabel36">
                   <Properties>
@@ -877,6 +888,20 @@
                   </AuxValues>
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparator27">
+                </Component>
+                <Component class="javax.swing.JButton" name="btn_CrearCon1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Crear Carro"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btn_CrearCon1MouseClicked"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
