@@ -4,6 +4,13 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author casti
@@ -93,9 +100,7 @@ public class MainLab8 extends javax.swing.JFrame {
         txtf_ContraIS = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         btn_IS = new javax.swing.JButton();
-        userLabel5 = new javax.swing.JLabel();
         btn_CrearCuenta = new javax.swing.JButton();
-        btn_MainMod = new javax.swing.JButton();
         userLabel22 = new javax.swing.JLabel();
         btn_ISAdmin = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -683,25 +688,12 @@ public class MainLab8 extends javax.swing.JFrame {
             }
         });
 
-        userLabel5.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        userLabel5.setForeground(new java.awt.Color(51, 51, 51));
-        userLabel5.setText("/");
-
         btn_CrearCuenta.setBackground(new java.awt.Color(0, 0, 0));
         btn_CrearCuenta.setForeground(new java.awt.Color(255, 255, 255));
         btn_CrearCuenta.setText("CREAR CUENTA");
         btn_CrearCuenta.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btn_CrearCuentaMouseClicked(evt);
-            }
-        });
-
-        btn_MainMod.setBackground(new java.awt.Color(0, 0, 0));
-        btn_MainMod.setForeground(new java.awt.Color(255, 255, 255));
-        btn_MainMod.setText("MODIFICAR CUENTAS");
-        btn_MainMod.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btn_MainModMouseClicked(evt);
             }
         });
 
@@ -740,34 +732,34 @@ public class MainLab8 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btn_IS, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btn_IS, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(29, 29, 29)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(userLabel5)
-                                    .addComponent(userLabel22))))
+                                .addComponent(userLabel22)))
                         .addGap(29, 29, 29)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btn_MainMod)
-                            .addComponent(btn_ISAdmin))
+                        .addComponent(btn_ISAdmin)
                         .addGap(298, 298, 298))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(userLabel4)
                             .addComponent(txtf_ContraIS)
                             .addComponent(jSeparator2)
                             .addComponent(userLabel3)
                             .addComponent(txtf_UsuarioIS)
                             .addComponent(jSeparator1)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(progressBUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(66, 66, 66)
-                                .addComponent(buscarU, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(progressCContra, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(comprobPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(comprobPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(progressBUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 442, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(66, 66, 66)
+                                        .addComponent(buscarU, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(btn_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(299, 299, 299)))))
                         .addGap(184, 184, 184))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -802,13 +794,10 @@ public class MainLab8 extends javax.swing.JFrame {
                             .addComponent(btn_ISAdmin, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3)
-                        .addGap(19, 19, 19)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btn_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(userLabel5)
-                            .addComponent(btn_MainMod, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(comprobPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btn_CrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(comprobPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -846,19 +835,11 @@ public class MainLab8 extends javax.swing.JFrame {
 
     private void btn_CrearCuentaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CrearCuentaMouseClicked
 
-        vCrearCuenta.pack();
-        vCrearCuenta.setLocationRelativeTo(null);
-        vCrearCuenta.setVisible(true);
+        vCrearUsuario.pack();
+        vCrearUsuario.setLocationRelativeTo(null);
+        vCrearUsuario.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btn_CrearCuentaMouseClicked
-
-    private void btn_MainModMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_MainModMouseClicked
-        vModificarJugador.pack();
-        vModificarJugador.setLocationRelativeTo(null);
-        vModificarJugador.setVisible(true);
-        llenarcomboModCarro();
-        this.setVisible(false);
-    }//GEN-LAST:event_btn_MainModMouseClicked
 
     private void btn_ISAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ISAdminMouseClicked
 
@@ -939,7 +920,7 @@ public class MainLab8 extends javax.swing.JFrame {
             if (txtf_UsuarioCC.getText().equals("") || txtf_ContraCC.getText().equals("") || txtf_NombreCC.getText().equals("") || txtf_CorreoCC.getText().equals("") || txtf_PaisRCC.getText().equals("")) {
                 JOptionPane.showMessageDialog(null, "¡Información incompleta!\nFaltan datos para crear usuario");
             } else {
-                jugadores.add(new Jugadores(nombr, corre, pais, usuario, contrase, 150000, fechaN));
+                jugadores.add(new Usuarios(nombr, corre, pais, usuario, contrase, 150000, fechaN));
                 JOptionPane.showMessageDialog(null, "¡Usuario creado exitosamente!");
                 txtf_UsuarioCC.setText("");
                 txtf_ContraCC.setText("");
@@ -947,14 +928,14 @@ public class MainLab8 extends javax.swing.JFrame {
                 txtf_CorreoCC.setText("");
                 txtf_PaisRCC.setText("");
                 jDC_FechaNaCC.setDate(new Date());
-                vCrearCuenta.setVisible(false);
+                vCrearUsuario.setVisible(false);
                 this.setVisible(true);
             }
         }
     }//GEN-LAST:event_btn_CrearCuentaCCMouseClicked
 
     private void btn_RegresarCCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_RegresarCCMouseClicked
-        vCrearCuenta.setVisible(false);
+        vCrearUsuario.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_btn_RegresarCCMouseClicked
 
@@ -974,14 +955,14 @@ public class MainLab8 extends javax.swing.JFrame {
         String nombr = txtf_nombreCon.getText();
         Object pais = cb_localCon.getSelectedItem();
 
-        Concesionarias nuevaCon = new Concesionarias(nombr, (String) pais);
+        Consesionaria nuevaCon = new Consesionaria(nombr, (String) pais);
         palabraconC.add(nuevaCon);
     }//GEN-LAST:event_btn_CrearConMouseClicked
 
     private void btn_Regresarmod4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Regresarmod4MouseClicked
-        vModificarJugador.pack();
-        vModificarJugador.setLocationRelativeTo(null);
-        vModificarJugador.setVisible(false);
+        vAdministrador.pack();
+        vAdministrador.setLocationRelativeTo(null);
+        vAdministrador.setVisible(false);
         this.setVisible(true);
     }//GEN-LAST:event_btn_Regresarmod4MouseClicked
 
@@ -1024,6 +1005,160 @@ public class MainLab8 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTabbedPane2MouseClicked
 
+    private void llenarcomboModCarro() {
+        cb_modJugadores.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+        for (Jugadores c : jugadores) {
+            DefaultComboBoxModel modelo
+                    = (DefaultComboBoxModel) cb_modJugadores.getModel();
+            modelo.addElement(c);
+            cb_modJugadores.setModel(modelo);
+        }
+    }
+
+    private void llenarcombi1() {
+        cb_marcaCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_marcaCarro.getModel();
+        if (cb_paisCarro.getSelectedItem().equals("Japón")) {
+            modelo.addElement("Subaru");
+            modelo.addElement("Toyota");
+            modelo.addElement("Honda");
+            modelo.addElement("Mitsubishi");
+            modelo.addElement("Nissan");
+        } else if (cb_paisCarro.getSelectedItem().equals("Italia")) {
+            modelo.addElement("Ferrari");
+            modelo.addElement("Lamborghini");
+        } else if (cb_paisCarro.getSelectedItem().equals("USA")) {
+            modelo.addElement("Ford");
+            modelo.addElement("Chevrolet");
+            modelo.addElement("ACORA");
+        } else if (cb_paisCarro.getSelectedItem().equals("Alemania")) {
+            modelo.addElement("BMW");
+            modelo.addElement("Mercedes-Benz");
+            modelo.addElement("XW");
+            modelo.addElement("Audi");
+            modelo.addElement("Porche");
+        } else if (cb_paisCarro.getSelectedItem().equals("Francia")) {
+            modelo.addElement("Reugeot");
+        } else if (cb_paisCarro.getSelectedItem().equals("UK")) {
+            modelo.addElement("Mini");
+        } else if (cb_paisCarro.getSelectedItem().equals("Suecia")) {
+            modelo.addElement("Volvo");
+        }
+
+        cb_marcaCarro.setModel(modelo);
+
+    }
+    
+    private void llenarcombi2() {
+        cb_modeloCarro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_modeloCarro.getModel();
+        if (cb_marcaCarro.getSelectedItem().equals("Subaru")) {
+            modelo.addElement("WR-X");
+            modelo.addElement("Imprez");
+            modelo.addElement("BRZ");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Toyota")) {
+            modelo.addElement("GT-86");
+            modelo.addElement("Supra");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Honda")) {
+            modelo.addElement("Civic Type-R");
+            modelo.addElement("Integra Type-R");
+            modelo.addElement("CR-X");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Mitsubishi")) {
+            modelo.addElement("Lancer Exo");
+            modelo.addElement("Mirage");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Nissan")) {
+            modelo.addElement("Skyline-GTR(R32-R34)");
+            modelo.addElement("GTR-R35");
+            modelo.addElement("2405X");
+            modelo.addElement("350Z");
+            modelo.addElement("370Z");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Ferrari")) {
+            modelo.addElement("LaFerrari");
+            modelo.addElement("Testorroso");
+            modelo.addElement("240");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Lamborghini")) {
+            modelo.addElement("Diablo");
+            modelo.addElement("Huracán");
+            modelo.addElement("Murcielago");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Ford")) {
+            modelo.addElement("Mustang");
+            modelo.addElement("F-150");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Chevrolet")) {
+            modelo.addElement("Camaro");
+            modelo.addElement("Corvette");
+            modelo.addElement("Bel-Air");
+        } else if (cb_marcaCarro.getSelectedItem().equals("ACORA")) {
+            modelo.addElement("NSX");
+        } else if (cb_marcaCarro.getSelectedItem().equals("BMW")) {
+            modelo.addElement("M3");
+            modelo.addElement("X6");
+            modelo.addElement("M5");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Mercedes-Benz")) {
+            modelo.addElement("A Class");
+            modelo.addElement("SLS AMG");
+            modelo.addElement("Mercedes-Benz E-Class");
+            modelo.addElement("Mercedes-Benz G-Class");
+        } else if (cb_marcaCarro.getSelectedItem().equals("XW")) {
+            modelo.addElement("Beetle");
+            modelo.addElement("Nardo Concept");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Audi")) {
+            modelo.addElement("R8");
+            modelo.addElement("TT-Coupe");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Porche")) {
+            modelo.addElement("All Carrera");
+            modelo.addElement("978");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Reugeot")) {
+            modelo.addElement("206");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Mini")) {
+            modelo.addElement("Cooper");
+            modelo.addElement("CountryMan");
+        } else if (cb_marcaCarro.getSelectedItem().equals("Volvo")) {
+            modelo.addElement("S90");
+            modelo.addElement("C30");
+            modelo.addElement("V90");
+            modelo.addElement("XC40");
+            modelo.addElement("S40");
+        }
+
+        cb_modeloCarro.setModel(modelo);
+
+    }
+
+//    private void listarTabla() {
+//        try {
+//
+//            //limpiar tabla
+//            tb_lista.setModel(new javax.swing.table.DefaultTableModel(
+//                    new Object[][]{},
+//                    new String[]{
+//                        "Usuario", "Nombre", "Correo", "Cuenta de Banco"
+//                    }
+//            ));
+//
+//            // TODO add your handling code here:
+//            for (Usuarios c : jugadores) {
+//                Object[] row = {c.getUser(), c.getNombre(), c.getCorreo(), c.getCuantBanco()};
+//                DefaultTableModel modelo = (DefaultTableModel) tb_lista.getModel();
+//                modelo.addRow(row);
+//                tb_lista.setModel(modelo);
+//            }
+//
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
+//    }
+
+    public static boolean validarContrasena(String contrasena) {
+
+        String regex = "^[a-zA-Z0-9-_&$%@]*$";
+        Pattern patron = Pattern.compile(regex);
+        Matcher matcher = patron.matcher(contrasena);
+
+        return matcher.matches();
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -1065,7 +1200,6 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JButton btn_CrearCuentaCC;
     private javax.swing.JButton btn_IS;
     private javax.swing.JButton btn_ISAdmin;
-    private javax.swing.JButton btn_MainMod;
     private javax.swing.JButton btn_RegresarCC;
     private javax.swing.JButton btn_RegresarCC1;
     private javax.swing.JButton btn_Regresarmod4;
@@ -1130,7 +1264,6 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JLabel userLabel39;
     private javax.swing.JLabel userLabel4;
     private javax.swing.JLabel userLabel40;
-    private javax.swing.JLabel userLabel5;
     private javax.swing.JLabel userLabel6;
     private javax.swing.JLabel userLabel7;
     private javax.swing.JLabel userLabel8;
