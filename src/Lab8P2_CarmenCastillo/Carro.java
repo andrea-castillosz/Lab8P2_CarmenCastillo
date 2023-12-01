@@ -28,6 +28,7 @@ public class Carro implements Serializable{
     private double Horsepower;
     private double VelPunta;
     private double Tiempo;
+    private double Tiempo2;
 
     public Carro() {
     }

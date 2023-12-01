@@ -4,10 +4,12 @@
  */
 package Lab8P2_CarmenCastillo;
 
+import java.awt.Color;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JColorChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -85,6 +87,18 @@ public class MainLab8 extends javax.swing.JFrame {
         cb_consen = new javax.swing.JComboBox<>();
         jSeparator27 = new javax.swing.JSeparator();
         btn_CrearCon1 = new javax.swing.JButton();
+        userLabel39 = new javax.swing.JLabel();
+        jSeparator28 = new javax.swing.JSeparator();
+        btn_ColorAdd = new javax.swing.JButton();
+        txtf_PrecioAdd = new javax.swing.JTextField();
+        userLabel41 = new javax.swing.JLabel();
+        jSeparator29 = new javax.swing.JSeparator();
+        userLabel42 = new javax.swing.JLabel();
+        txtf_PrecioAdd1 = new javax.swing.JTextField();
+        jSeparator30 = new javax.swing.JSeparator();
+        userLabel43 = new javax.swing.JLabel();
+        txtf_PrecioAdd2 = new javax.swing.JTextField();
+        jSeparator31 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
         btn_Regresarmod5 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -393,7 +407,7 @@ public class MainLab8 extends javax.swing.JFrame {
                 .addComponent(userLabel34)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(cb_localCon, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                 .addComponent(btn_CrearCon, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59))
         );
@@ -496,36 +510,73 @@ public class MainLab8 extends javax.swing.JFrame {
             }
         });
 
+        userLabel39.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel39.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel39.setText("COLOR");
+
+        btn_ColorAdd.setBackground(new java.awt.Color(153, 153, 153));
+        btn_ColorAdd.setForeground(new java.awt.Color(255, 255, 255));
+        btn_ColorAdd.setBorder(null);
+        btn_ColorAdd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_ColorAddMouseClicked(evt);
+            }
+        });
+
+        txtf_PrecioAdd.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_PrecioAdd.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_PrecioAdd.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_PrecioAdd.setBorder(null);
+
+        userLabel41.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel41.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel41.setText("PRECIO");
+
+        userLabel42.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel42.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel42.setText("HORSEPOWER");
+
+        txtf_PrecioAdd1.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_PrecioAdd1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_PrecioAdd1.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_PrecioAdd1.setBorder(null);
+
+        userLabel43.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel43.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel43.setText("VELOCIDAD ");
+
+        txtf_PrecioAdd2.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_PrecioAdd2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_PrecioAdd2.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_PrecioAdd2.setBorder(null);
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(btn_Regresarmod4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(title5)
-                        .addGap(37, 37, 37))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userLabel35)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jDC_FechaFab, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(127, 127, 127)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userLabel38)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(83, 83, 83))
+                        .addContainerGap()
+                        .addComponent(btn_Regresarmod4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userLabel36)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jDC_FechaFab, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(userLabel35, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtf_PrecioAdd1)
+                                    .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(userLabel42)
+                                .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(userLabel43))
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(userLabel37, javax.swing.GroupLayout.Alignment.LEADING)
@@ -538,54 +589,103 @@ public class MainLab8 extends javax.swing.JFrame {
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jSeparator27, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(cb_consen, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(userLabel40, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(userLabel40, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(userLabel36))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userLabel38)
+                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtf_PrecioAdd2, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jSeparator28, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+                                    .addComponent(btn_ColorAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(139, 139, 139))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addComponent(title5)
+                        .addContainerGap())
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userLabel41)
+                            .addComponent(txtf_PrecioAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(userLabel39)
+                            .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(title5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_Regresarmod4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(userLabel35)
-                        .addGap(18, 18, 18)
+                        .addContainerGap()
+                        .addComponent(btn_Regresarmod4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(userLabel35)
+                            .addComponent(userLabel38)))
+                    .addComponent(title5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jDC_FechaFab, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(userLabel38)
-                        .addGap(4, 4, 4)
-                        .addComponent(cb_modeloCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cb_modeloCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                .addComponent(userLabel36)
-                .addGap(4, 4, 4)
-                .addComponent(cb_paisCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSeparator26, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14)
-                .addComponent(userLabel40)
-                .addGap(4, 4, 4)
-                .addComponent(cb_consen, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(userLabel37)
-                .addGap(4, 4, 4)
-                .addComponent(cb_marcaCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(jSeparator25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(80, 80, 80))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addComponent(userLabel36)
+                        .addGap(4, 4, 4)
+                        .addComponent(cb_paisCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14)
+                        .addComponent(userLabel40)
+                        .addGap(4, 4, 4)
+                        .addComponent(cb_consen, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userLabel37)
+                        .addGap(4, 4, 4)
+                        .addComponent(cb_marcaCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator25, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userLabel42)
+                        .addGap(4, 4, 4)
+                        .addComponent(txtf_PrecioAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userLabel43)
+                        .addGap(40, 40, 40)
+                        .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8, 8, 8))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(userLabel41)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtf_PrecioAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(userLabel39)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn_ColorAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator28, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(88, 88, 88)
+                        .addComponent(txtf_PrecioAdd2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(117, 117, 117)
                         .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59))))
+                        .addContainerGap())))
         );
 
         jTabbedPane2.addTab("Agregar Carro", jPanel8);
@@ -638,7 +738,7 @@ public class MainLab8 extends javax.swing.JFrame {
                     .addComponent(title4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(28, 28, 28)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Listar Carros", jPanel4);
@@ -1019,6 +1119,10 @@ public class MainLab8 extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btn_CrearCon1MouseClicked
 
+    private void btn_ColorAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ColorAddMouseClicked
+        btn_ColorAdd.setBackground(JColorChooser.showDialog(this, "Seleccione Color.", Color.green));
+    }//GEN-LAST:event_btn_ColorAddMouseClicked
+
     private void llenarcomboCons() {
         cb_consen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
         AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); //extension propia
@@ -1249,6 +1353,7 @@ public class MainLab8 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_ColorAdd;
     private javax.swing.JButton btn_CrearCon;
     private javax.swing.JButton btn_CrearCon1;
     private javax.swing.JButton btn_CrearCuenta;
@@ -1286,7 +1391,11 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator25;
     private javax.swing.JSeparator jSeparator26;
     private javax.swing.JSeparator jSeparator27;
+    private javax.swing.JSeparator jSeparator28;
+    private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator30;
+    private javax.swing.JSeparator jSeparator31;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
@@ -1302,6 +1411,9 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JTextField txtf_CorreoCC;
     private javax.swing.JTextField txtf_NombreCC;
     private javax.swing.JTextField txtf_PaisRCC;
+    private javax.swing.JTextField txtf_PrecioAdd;
+    private javax.swing.JTextField txtf_PrecioAdd1;
+    private javax.swing.JTextField txtf_PrecioAdd2;
     private javax.swing.JTextField txtf_UsuarioCC;
     private javax.swing.JTextField txtf_UsuarioIS;
     private javax.swing.JTextField txtf_nombreCon;
@@ -1315,8 +1427,12 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JLabel userLabel36;
     private javax.swing.JLabel userLabel37;
     private javax.swing.JLabel userLabel38;
+    private javax.swing.JLabel userLabel39;
     private javax.swing.JLabel userLabel4;
     private javax.swing.JLabel userLabel40;
+    private javax.swing.JLabel userLabel41;
+    private javax.swing.JLabel userLabel42;
+    private javax.swing.JLabel userLabel43;
     private javax.swing.JLabel userLabel6;
     private javax.swing.JLabel userLabel7;
     private javax.swing.JLabel userLabel8;
