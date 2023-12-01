@@ -81,10 +81,8 @@ public class MainLab8 extends javax.swing.JFrame {
         userLabel38 = new javax.swing.JLabel();
         cb_modeloCarro = new javax.swing.JComboBox<>();
         jSeparator26 = new javax.swing.JSeparator();
-        jSeparator15 = new javax.swing.JSeparator();
-        userLabel39 = new javax.swing.JLabel();
         userLabel40 = new javax.swing.JLabel();
-        cb_marcaCarro1 = new javax.swing.JComboBox<>();
+        cb_consen = new javax.swing.JComboBox<>();
         jSeparator27 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
         btn_Regresarmod5 = new javax.swing.JButton();
@@ -470,25 +468,21 @@ public class MainLab8 extends javax.swing.JFrame {
             }
         });
 
-        userLabel39.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
-        userLabel39.setForeground(new java.awt.Color(51, 51, 51));
-        userLabel39.setText("FECHA DE FABRICACION");
-
         userLabel40.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         userLabel40.setForeground(new java.awt.Color(51, 51, 51));
         userLabel40.setText("CONSESIONARIA");
 
-        cb_marcaCarro1.setBackground(new java.awt.Color(153, 153, 153));
-        cb_marcaCarro1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        cb_marcaCarro1.setBorder(null);
-        cb_marcaCarro1.addItemListener(new java.awt.event.ItemListener() {
+        cb_consen.setBackground(new java.awt.Color(153, 153, 153));
+        cb_consen.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        cb_consen.setBorder(null);
+        cb_consen.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
-                cb_marcaCarro1ItemStateChanged(evt);
+                cb_consenItemStateChanged(evt);
             }
         });
-        cb_marcaCarro1.addActionListener(new java.awt.event.ActionListener() {
+        cb_consen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb_marcaCarro1ActionPerformed(evt);
+                cb_consenActionPerformed(evt);
             }
         });
 
@@ -506,38 +500,34 @@ public class MainLab8 extends javax.swing.JFrame {
                         .addGap(37, 37, 37))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(userLabel35)
-                                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jDC_FechaNaCC1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(96, 96, 96))
-                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(userLabel36)
-                                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(userLabel37, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addComponent(jSeparator25, javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(cb_marcaCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jSeparator23, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(cb_paisCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(jSeparator27, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(cb_marcaCarro1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(userLabel40, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(userLabel35)
+                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jDC_FechaNaCC1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(127, 127, 127)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator15, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(userLabel39)
                             .addComponent(userLabel38)
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(51, 51, 51))))
+                        .addGap(83, 83, 83))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(userLabel36)
+                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(userLabel37, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(jSeparator25, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(cb_marcaCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSeparator23, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cb_paisCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSeparator27, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(cb_consen, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(userLabel40, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -546,37 +536,30 @@ public class MainLab8 extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(title5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_Regresarmod4, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
                         .addComponent(userLabel35)
                         .addGap(18, 18, 18)
                         .addComponent(jDC_FechaNaCC1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(userLabel39)
-                        .addGap(53, 53, 53)
-                        .addComponent(jSeparator15, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addComponent(userLabel36)
-                        .addGap(4, 4, 4)
-                        .addComponent(cb_paisCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(userLabel38)
                         .addGap(4, 4, 4)
                         .addComponent(cb_modeloCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addComponent(userLabel36)
+                .addGap(4, 4, 4)
+                .addComponent(cb_paisCarro, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14)
                 .addComponent(userLabel40)
                 .addGap(4, 4, 4)
-                .addComponent(cb_marcaCarro1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cb_consen, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -958,47 +941,12 @@ public class MainLab8 extends javax.swing.JFrame {
 
         Consesionaria nCon = new Consesionaria(nombr, (String) pais);
 
-        AdminConsesionaria aCon = new AdminConsesionaria("./Usuarios.usr"); //extension propia
+        AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); //extension propia
         aCon.cargarArchivo();
         aCon.setCon(nCon);
         aCon.escribirArchivo();
 
     }//GEN-LAST:event_btn_CrearConMouseClicked
-
-    private void btn_Regresarmod4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Regresarmod4MouseClicked
-        vAdministrador.pack();
-        vAdministrador.setLocationRelativeTo(null);
-        vAdministrador.setVisible(false);
-        this.setVisible(true);
-    }//GEN-LAST:event_btn_Regresarmod4MouseClicked
-
-    private void cb_paisCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_paisCarroItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb_paisCarroItemStateChanged
-
-    private void cb_paisCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_paisCarroActionPerformed
-        llenarcombi1();
-    }//GEN-LAST:event_cb_paisCarroActionPerformed
-
-    private void cb_marcaCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_marcaCarroItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb_marcaCarroItemStateChanged
-
-    private void cb_marcaCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_marcaCarroActionPerformed
-        llenarcombi2();
-    }//GEN-LAST:event_cb_marcaCarroActionPerformed
-
-    private void cb_modeloCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_modeloCarroItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb_modeloCarroItemStateChanged
-
-    private void cb_marcaCarro1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_marcaCarro1ItemStateChanged
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb_marcaCarro1ItemStateChanged
-
-    private void cb_marcaCarro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_marcaCarro1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb_marcaCarro1ActionPerformed
 
     private void btn_Regresarmod5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Regresarmod5MouseClicked
         vAdministrador.pack();
@@ -1011,9 +959,90 @@ public class MainLab8 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTabbedPane2MouseClicked
 
-    private void llenarcomboModCarro() {
-        
-        
+    private void cb_consenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_consenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_consenActionPerformed
+
+    private void cb_consenItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_consenItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_consenItemStateChanged
+
+    private void cb_modeloCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_modeloCarroItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_modeloCarroItemStateChanged
+
+    private void cb_marcaCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_marcaCarroActionPerformed
+        llenarcombi2();
+    }//GEN-LAST:event_cb_marcaCarroActionPerformed
+
+    private void cb_marcaCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_marcaCarroItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_marcaCarroItemStateChanged
+
+    private void cb_paisCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_paisCarroActionPerformed
+        llenarcombi1();
+        llenarcomboCons();
+    }//GEN-LAST:event_cb_paisCarroActionPerformed
+
+    private void cb_paisCarroItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_paisCarroItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_paisCarroItemStateChanged
+
+    private void btn_Regresarmod4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_Regresarmod4MouseClicked
+        vAdministrador.pack();
+        vAdministrador.setLocationRelativeTo(null);
+        vAdministrador.setVisible(false);
+        this.setVisible(true);
+    }//GEN-LAST:event_btn_Regresarmod4MouseClicked
+
+    private void llenarcomboCons() {
+        cb_consen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+        AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); //extension propia
+        aCon.cargarArchivo();
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_consen.getModel();
+        if (cb_paisCarro.getSelectedItem().equals("Japón")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("Japón")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        }else if (cb_paisCarro.getSelectedItem().equals("Italia")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("Italia")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        } else if (cb_paisCarro.getSelectedItem().equals("USA")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("USA")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        } else if (cb_paisCarro.getSelectedItem().equals("Alemania")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("Alemania")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        } else if (cb_paisCarro.getSelectedItem().equals("Francia")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("Francia")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        } else if (cb_paisCarro.getSelectedItem().equals("UK")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("UK")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        } else if (cb_paisCarro.getSelectedItem().equals("Suecia")) {
+            for (Consesionaria con : aCon.getListaConses()) {
+                if (con.getLocación().equals("Suecia")) {
+                    modelo.addElement(con.getNombre());
+                }
+            }
+        }
         
     }
 
@@ -1206,9 +1235,9 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JButton btn_Regresarmod4;
     private javax.swing.JButton btn_Regresarmod5;
     private javax.swing.JLabel buscarU;
+    private javax.swing.JComboBox<String> cb_consen;
     private javax.swing.JComboBox<String> cb_localCon;
     private javax.swing.JComboBox<String> cb_marcaCarro;
-    private javax.swing.JComboBox<String> cb_marcaCarro1;
     private javax.swing.JComboBox<String> cb_modeloCarro;
     private javax.swing.JComboBox<String> cb_paisCarro;
     private javax.swing.JLabel comprobPassword;
@@ -1225,7 +1254,6 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator15;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator22;
     private javax.swing.JSeparator jSeparator23;
@@ -1262,7 +1290,6 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JLabel userLabel36;
     private javax.swing.JLabel userLabel37;
     private javax.swing.JLabel userLabel38;
-    private javax.swing.JLabel userLabel39;
     private javax.swing.JLabel userLabel4;
     private javax.swing.JLabel userLabel40;
     private javax.swing.JLabel userLabel6;

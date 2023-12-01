@@ -594,51 +594,45 @@
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="userLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Component id="jSeparator24" alignment="1" min="-2" pref="333" max="-2" attributes="0"/>
-                                                  <Component id="jDC_FechaNaCC1" alignment="0" min="-2" pref="333" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="userLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                                  <Group type="103" alignment="1" groupAlignment="1" attributes="0">
-                                                      <Component id="userLabel37" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                          <Component id="jSeparator25" alignment="0" max="32767" attributes="0"/>
-                                                          <Component id="cb_marcaCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
-                                                  <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="jSeparator23" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="cb_paisCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="jSeparator27" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="cb_marcaCarro1" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Component id="userLabel40" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="userLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Component id="jSeparator24" alignment="1" min="-2" pref="333" max="-2" attributes="0"/>
+                                          <Component id="jDC_FechaNaCC1" alignment="0" min="-2" pref="333" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
+                                  <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jSeparator15" alignment="0" min="-2" pref="398" max="-2" attributes="0"/>
-                                      <Component id="userLabel39" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="userLabel38" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                                           <Component id="jSeparator26" alignment="0" max="32767" attributes="0"/>
                                           <Component id="cb_modeloCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="userLabel36" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                          <Group type="103" alignment="1" groupAlignment="1" attributes="0">
+                                              <Component id="userLabel37" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="jSeparator25" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="cb_marcaCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="jSeparator23" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="cb_paisCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="103" alignment="1" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="jSeparator27" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="cb_consen" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="userLabel40" alignment="0" min="-2" pref="122" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -652,32 +646,16 @@
                               <Component id="title5" alignment="3" max="32767" attributes="0"/>
                               <Component id="btn_Regresarmod4" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
                           </Group>
+                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
                                   <Component id="userLabel35" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jDC_FechaNaCC1" min="-2" pref="32" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator24" min="-2" pref="26" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="userLabel39" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                  <Component id="jSeparator15" pref="29" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="userLabel36" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                  <Component id="cb_paisCarro" min="-2" pref="38" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jSeparator23" min="-2" pref="26" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="userLabel38" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                   <Component id="cb_modeloCarro" min="-2" pref="38" max="-2" attributes="0"/>
@@ -685,10 +663,16 @@
                                   <Component id="jSeparator26" min="-2" pref="26" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace pref="8" max="32767" attributes="0"/>
+                          <Component id="userLabel36" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                          <Component id="cb_paisCarro" min="-2" pref="38" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator23" min="-2" pref="26" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                           <Component id="userLabel40" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                          <Component id="cb_marcaCarro1" min="-2" pref="38" max="-2" attributes="0"/>
+                          <Component id="cb_consen" min="-2" pref="38" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jSeparator27" min="-2" pref="26" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -858,19 +842,6 @@
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparator26">
                 </Component>
-                <Component class="javax.swing.JSeparator" name="jSeparator15">
-                </Component>
-                <Component class="javax.swing.JLabel" name="userLabel39">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Roboto Light" size="14" style="1"/>
-                    </Property>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="33" green="33" red="33" type="rgb"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="FECHA DE FABRICACION"/>
-                  </Properties>
-                </Component>
                 <Component class="javax.swing.JLabel" name="userLabel40">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -882,7 +853,7 @@
                     <Property name="text" type="java.lang.String" value="CONSESIONARIA"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JComboBox" name="cb_marcaCarro1">
+                <Component class="javax.swing.JComboBox" name="cb_consen">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="99" green="99" red="99" type="rgb"/>
@@ -898,8 +869,8 @@
                     </Property>
                   </Properties>
                   <Events>
-                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cb_marcaCarro1ItemStateChanged"/>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb_marcaCarro1ActionPerformed"/>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cb_consenItemStateChanged"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cb_consenActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
