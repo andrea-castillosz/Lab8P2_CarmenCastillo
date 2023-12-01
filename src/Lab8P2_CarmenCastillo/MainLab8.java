@@ -815,11 +815,13 @@ public class MainLab8 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_ISMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ISMouseClicked
-
+        
         boolean correct = false;
-        for (int i = 0; i < jugadores.size(); i++) {
-            if (jugadores.get(i).getContra().equals(txtf_ContraIS) && jugadores.get(i).getUser().equals(txtf_UsuarioIS.getText())) {
-                //vMenuPrincipal.setVisible(true);
+        AdminUsuarios aUs = new AdminUsuarios("./Usuarios.usr");
+        aUs.cargarArchivo();
+        for (Usuarios c : aUs.getListaUsuarios()) {
+            if (c.getContra().equals(txtf_ContraIS) && c.getUser().equals(txtf_UsuarioIS.getText())) {
+//                vAdministrador.setVisible(true);
                 this.setVisible(false);
                 correct = true;
             }
@@ -876,18 +878,11 @@ public class MainLab8 extends javax.swing.JFrame {
 
         int anio = fechaN.getYear() + 1900;
 
-        for (int i = 0; i < jugadores.size(); i++) {
-
-            if (txtf_UsuarioCC.getText().equals(jugadores.get(i).getUser())) {
-                JOptionPane.showMessageDialog(null, "¡Este usuario ya existe!");
-                usuarioRep = true;
-            }
-
-        }
         //validar edad
         //        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("Europe/Paris"));
         //        cal.setTime(fechaN);
         //System.out.println(anio);
+        
         if (anio > 2011) {
             edadValid = false;
             JOptionPane.showMessageDialog(null, "Edad invalida 1.");
@@ -965,7 +960,7 @@ public class MainLab8 extends javax.swing.JFrame {
 
         AdminConsesionaria aCon = new AdminConsesionaria("./Usuarios.usr"); //extension propia
         aCon.cargarArchivo();
-        aCon.setCarro(nCon);
+        aCon.setCon(nCon);
         aCon.escribirArchivo();
 
     }//GEN-LAST:event_btn_CrearConMouseClicked
@@ -1017,13 +1012,9 @@ public class MainLab8 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane2MouseClicked
 
     private void llenarcomboModCarro() {
-        cb_modJugadores.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
-        for (Jugadores c : jugadores) {
-            DefaultComboBoxModel modelo
-                    = (DefaultComboBoxModel) cb_modJugadores.getModel();
-            modelo.addElement(c);
-            cb_modJugadores.setModel(modelo);
-        }
+        
+        
+        
     }
 
     private void llenarcombi1() {
