@@ -42,5 +42,15 @@ public class Consesionaria implements Serializable{
     public void setLocación(String locación) {
         this.Locación = locación;
     }
+
+    public ArrayList<Carro> getListCarro() {
+        return ListCarro;
+    }
+
+    public void setListCarro(ArrayList<Carro> ListCarro) {
+        this.ListCarro = ListCarro;
+    }
+    
+    
     
 }
