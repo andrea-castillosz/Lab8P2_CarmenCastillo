@@ -33,7 +33,7 @@ public class Carro implements Serializable{
     public Carro() {
     }
 
-    public Carro(Date FechaFabric, String Marca, String Modelo, String PaisR, Color Color, double Precio, boolean Marcador, double Horsepower, double VelPunta, double Tiempo) {
+    public Carro(Date FechaFabric, String Marca, String Modelo, String PaisR, Color Color, double Precio, boolean Marcador, double Horsepower, double VelPunta, double Tiempo, double Tiempo2) {
         this.FechaFabric = FechaFabric;
         this.Marca = Marca;
         this.Modelo = Modelo;
@@ -44,6 +44,7 @@ public class Carro implements Serializable{
         this.Horsepower = Horsepower;
         this.VelPunta = VelPunta;
         this.Tiempo = Tiempo;
+        this.Tiempo2 = Tiempo2;
     }
 
     public Date getFechaFabric() {
