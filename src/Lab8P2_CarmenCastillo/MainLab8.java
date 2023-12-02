@@ -94,11 +94,19 @@ public class MainLab8 extends javax.swing.JFrame {
         userLabel41 = new javax.swing.JLabel();
         jSeparator29 = new javax.swing.JSeparator();
         userLabel42 = new javax.swing.JLabel();
-        txtf_PrecioAdd1 = new javax.swing.JTextField();
+        txtf_HorseP = new javax.swing.JTextField();
         jSeparator30 = new javax.swing.JSeparator();
         userLabel43 = new javax.swing.JLabel();
-        txtf_PrecioAdd2 = new javax.swing.JTextField();
+        txtf_Velocidad = new javax.swing.JTextField();
         jSeparator31 = new javax.swing.JSeparator();
+        userLabel44 = new javax.swing.JLabel();
+        txtf_Tiempo1 = new javax.swing.JTextField();
+        jSeparator32 = new javax.swing.JSeparator();
+        userLabel45 = new javax.swing.JLabel();
+        txtf_Tiempo2 = new javax.swing.JTextField();
+        jSeparator33 = new javax.swing.JSeparator();
+        userLabel46 = new javax.swing.JLabel();
+        chbx_recons = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         btn_Regresarmod5 = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -536,19 +544,44 @@ public class MainLab8 extends javax.swing.JFrame {
         userLabel42.setForeground(new java.awt.Color(51, 51, 51));
         userLabel42.setText("HORSEPOWER");
 
-        txtf_PrecioAdd1.setBackground(new java.awt.Color(204, 204, 204));
-        txtf_PrecioAdd1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        txtf_PrecioAdd1.setForeground(new java.awt.Color(0, 0, 0));
-        txtf_PrecioAdd1.setBorder(null);
+        txtf_HorseP.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_HorseP.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_HorseP.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_HorseP.setBorder(null);
 
         userLabel43.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         userLabel43.setForeground(new java.awt.Color(51, 51, 51));
         userLabel43.setText("VELOCIDAD ");
 
-        txtf_PrecioAdd2.setBackground(new java.awt.Color(204, 204, 204));
-        txtf_PrecioAdd2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        txtf_PrecioAdd2.setForeground(new java.awt.Color(0, 0, 0));
-        txtf_PrecioAdd2.setBorder(null);
+        txtf_Velocidad.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_Velocidad.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_Velocidad.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_Velocidad.setBorder(null);
+
+        userLabel44.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel44.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel44.setText("TIEMPO 0 - 60 KM/H");
+
+        txtf_Tiempo1.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_Tiempo1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_Tiempo1.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_Tiempo1.setBorder(null);
+
+        userLabel45.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel45.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel45.setText("TIEMPO 0 - 100 KM/H");
+
+        txtf_Tiempo2.setBackground(new java.awt.Color(204, 204, 204));
+        txtf_Tiempo2.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        txtf_Tiempo2.setForeground(new java.awt.Color(0, 0, 0));
+        txtf_Tiempo2.setBorder(null);
+
+        userLabel46.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel46.setForeground(new java.awt.Color(51, 51, 51));
+        userLabel46.setText("ES RECONSTRUIDO?");
+
+        chbx_recons.setForeground(new java.awt.Color(0, 0, 0));
+        chbx_recons.setText("SI");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -572,11 +605,12 @@ public class MainLab8 extends javax.swing.JFrame {
                                     .addComponent(jDC_FechaFab, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(userLabel35, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtf_PrecioAdd1)
+                                    .addComponent(txtf_HorseP)
                                     .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(userLabel42)
                                 .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(userLabel43))
+                                .addComponent(userLabel43)
+                                .addComponent(txtf_Velocidad, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(userLabel37, javax.swing.GroupLayout.Alignment.LEADING)
@@ -600,7 +634,10 @@ public class MainLab8 extends javax.swing.JFrame {
                                 .addComponent(jSeparator26, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(cb_modeloCarro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(txtf_PrecioAdd2, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSeparator32, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(userLabel44)
+                                    .addComponent(txtf_Tiempo1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jSeparator28, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
                                     .addComponent(btn_ColorAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -613,7 +650,12 @@ public class MainLab8 extends javax.swing.JFrame {
                             .addComponent(userLabel41)
                             .addComponent(txtf_PrecioAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(userLabel39)
-                            .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator33, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(userLabel45)
+                            .addComponent(txtf_Tiempo2, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(userLabel46)
+                            .addComponent(chbx_recons, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap())))
         );
         jPanel8Layout.setVerticalGroup(
@@ -661,12 +703,14 @@ public class MainLab8 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(userLabel42)
                         .addGap(4, 4, 4)
-                        .addComponent(txtf_PrecioAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtf_HorseP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(userLabel43)
-                        .addGap(40, 40, 40)
+                        .addGap(4, 4, 4)
+                        .addComponent(txtf_Velocidad, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(8, 8, 8))
                     .addGroup(jPanel8Layout.createSequentialGroup()
@@ -681,9 +725,23 @@ public class MainLab8 extends javax.swing.JFrame {
                         .addComponent(btn_ColorAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator28, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(88, 88, 88)
-                        .addComponent(txtf_PrecioAdd2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(117, 117, 117)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(userLabel44)
+                        .addGap(4, 4, 4)
+                        .addComponent(txtf_Tiempo1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator32, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userLabel45)
+                        .addGap(4, 4, 4)
+                        .addComponent(txtf_Tiempo2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator33, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(userLabel46)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(chbx_recons)
+                        .addGap(14, 14, 14)
                         .addComponent(btn_CrearCon1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap())))
         );
@@ -1370,6 +1428,7 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cb_marcaCarro;
     private javax.swing.JComboBox<String> cb_modeloCarro;
     private javax.swing.JComboBox<String> cb_paisCarro;
+    private javax.swing.JCheckBox chbx_recons;
     private javax.swing.JLabel comprobPassword;
     private com.toedter.calendar.JDateChooser jDC_FechaFab;
     private com.toedter.calendar.JDateChooser jDC_FechaNaCC;
@@ -1396,6 +1455,8 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator30;
     private javax.swing.JSeparator jSeparator31;
+    private javax.swing.JSeparator jSeparator32;
+    private javax.swing.JSeparator jSeparator33;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
@@ -1409,13 +1470,15 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JTextField txtf_ContraCC;
     private javax.swing.JTextField txtf_ContraIS;
     private javax.swing.JTextField txtf_CorreoCC;
+    private javax.swing.JTextField txtf_HorseP;
     private javax.swing.JTextField txtf_NombreCC;
     private javax.swing.JTextField txtf_PaisRCC;
     private javax.swing.JTextField txtf_PrecioAdd;
-    private javax.swing.JTextField txtf_PrecioAdd1;
-    private javax.swing.JTextField txtf_PrecioAdd2;
+    private javax.swing.JTextField txtf_Tiempo1;
+    private javax.swing.JTextField txtf_Tiempo2;
     private javax.swing.JTextField txtf_UsuarioCC;
     private javax.swing.JTextField txtf_UsuarioIS;
+    private javax.swing.JTextField txtf_Velocidad;
     private javax.swing.JTextField txtf_nombreCon;
     private javax.swing.JLabel userLabel10;
     private javax.swing.JLabel userLabel11;
@@ -1433,6 +1496,9 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JLabel userLabel41;
     private javax.swing.JLabel userLabel42;
     private javax.swing.JLabel userLabel43;
+    private javax.swing.JLabel userLabel44;
+    private javax.swing.JLabel userLabel45;
+    private javax.swing.JLabel userLabel46;
     private javax.swing.JLabel userLabel6;
     private javax.swing.JLabel userLabel7;
     private javax.swing.JLabel userLabel8;

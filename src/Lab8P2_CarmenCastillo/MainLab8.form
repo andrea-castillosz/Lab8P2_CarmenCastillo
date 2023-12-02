@@ -604,12 +604,13 @@
                                               <Component id="userLabel35" alignment="0" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="txtf_PrecioAdd1" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="txtf_HorseP" alignment="0" max="32767" attributes="0"/>
                                               <Component id="jSeparator30" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
                                           </Group>
                                           <Component id="userLabel42" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jSeparator31" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
                                           <Component id="userLabel43" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtf_Velocidad" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                           <Group type="103" alignment="1" groupAlignment="1" attributes="0">
@@ -643,7 +644,11 @@
                                           <Component id="cb_modeloCarro" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                          <Component id="txtf_PrecioAdd2" min="-2" pref="335" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jSeparator32" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                              <Component id="userLabel44" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtf_Tiempo1" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                          </Group>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Component id="jSeparator28" pref="335" max="32767" attributes="0"/>
                                               <Component id="btn_ColorAdd" max="32767" attributes="0"/>
@@ -662,6 +667,11 @@
                                       <Component id="txtf_PrecioAdd" min="-2" pref="335" max="-2" attributes="0"/>
                                       <Component id="userLabel39" min="-2" max="-2" attributes="0"/>
                                       <Component id="jSeparator29" min="-2" pref="335" max="-2" attributes="0"/>
+                                      <Component id="jSeparator33" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                      <Component id="userLabel45" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="txtf_Tiempo2" alignment="0" min="-2" pref="335" max="-2" attributes="0"/>
+                                      <Component id="userLabel46" min="-2" max="-2" attributes="0"/>
+                                      <Component id="chbx_recons" min="-2" pref="85" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -720,12 +730,14 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="userLabel42" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                  <Component id="txtf_PrecioAdd1" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="txtf_HorseP" min="-2" pref="30" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator30" min="-2" pref="17" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="userLabel43" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Component id="txtf_Velocidad" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator31" min="-2" pref="17" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                               </Group>
@@ -741,9 +753,23 @@
                                   <Component id="btn_ColorAdd" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator28" min="-2" pref="26" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                                  <Component id="txtf_PrecioAdd2" min="-2" pref="30" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="userLabel44" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Component id="txtf_Tiempo1" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSeparator32" min="-2" pref="17" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="userLabel45" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Component id="txtf_Tiempo2" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jSeparator33" min="-2" pref="17" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="userLabel46" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="chbx_recons" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                   <Component id="btn_CrearCon1" min="-2" pref="35" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -1027,7 +1053,7 @@
                     <Property name="text" type="java.lang.String" value="HORSEPOWER"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtf_PrecioAdd1">
+                <Component class="javax.swing.JTextField" name="txtf_HorseP">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -1056,7 +1082,7 @@
                     <Property name="text" type="java.lang.String" value="VELOCIDAD "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtf_PrecioAdd2">
+                <Component class="javax.swing.JTextField" name="txtf_Velocidad">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -1073,6 +1099,83 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparator31">
+                </Component>
+                <Component class="javax.swing.JLabel" name="userLabel44">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Roboto Light" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="33" red="33" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="TIEMPO 0 - 60 KM/H"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtf_Tiempo1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="SansSerif" size="14" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator32">
+                </Component>
+                <Component class="javax.swing.JLabel" name="userLabel45">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Roboto Light" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="33" red="33" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="TIEMPO 0 - 100 KM/H"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtf_Tiempo2">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="SansSerif" size="14" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="null"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator33">
+                </Component>
+                <Component class="javax.swing.JLabel" name="userLabel46">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Roboto Light" size="14" style="1"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="33" green="33" red="33" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="ES RECONSTRUIDO?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="chbx_recons">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="SI"/>
+                  </Properties>
                 </Component>
               </SubComponents>
             </Container>
