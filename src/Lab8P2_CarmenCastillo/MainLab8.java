@@ -1189,6 +1189,11 @@ public class MainLab8 extends javax.swing.JFrame {
                 "Marca", "Modelo", "Color", "Fecha", "Tipo"
             }
         ));
+        jt_com.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jt_comKeyPressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(jt_com);
 
         userLabel47.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
@@ -1545,7 +1550,7 @@ public class MainLab8 extends javax.swing.JFrame {
                 usuario = txtf_UsuarioIS.getText();
                 llenarcomboCompraCons();
                 listarTablaCompra();
-                
+
             }
         }
 
@@ -1706,14 +1711,12 @@ public class MainLab8 extends javax.swing.JFrame {
             }
         }
         aCos.escribirArchivo();
-        
 
         txtf_PrecioAdd.setText("");
         txtf_HorseP.setText("");
         txtf_Velocidad.setText("");
         txtf_Tiempo1.setText("");
         txtf_Tiempo2.setText("");
-        
 
 
     }//GEN-LAST:event_btn_CrearCarMouseClicked
@@ -1839,7 +1842,7 @@ public class MainLab8 extends javax.swing.JFrame {
     }//GEN-LAST:event_jTabbedPane3MouseClicked
 
     private void cb_consenComprarItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_consenComprarItemStateChanged
-        // TODO add your handling code here:
+        listarTablaCompra();
     }//GEN-LAST:event_cb_consenComprarItemStateChanged
 
     private void cb_consenComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_consenComprarActionPerformed
@@ -1858,6 +1861,37 @@ public class MainLab8 extends javax.swing.JFrame {
         this.setVisible(true);
     }//GEN-LAST:event_jButton2MouseClicked
 
+    private void jt_comKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jt_comKeyPressed
+
+        if (evt.getKeyCode() == evt.VK_ENTER) {
+            if (jt_com.getSelectedRow() >= 0) {
+                //int posic = jt_com.getSelectedRow();
+
+                AdminUsuarios aUs = new AdminUsuarios("./Usuarios.usr");
+                aUs.cargarArchivo();
+
+                AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns");
+                aCon.cargarArchivo();
+                for (Consesionaria con : aCon.getListaConses()) {
+                    if (cb_consenComprar.getSelectedItem().equals(con.getNombre())) {
+                        for (Carro c : con.getListCarro()) {
+                            if (jt_com.getSelectedRow() == con.getListCarro().indexOf(c)) {
+                                for (Usuarios u : aUs.getListaUsuarios()) {
+                                    if (u.getUser().equals(usuario)) { //se supone que le doy valor al usuario (es un string) al iniciar sesion
+                                        u.getListaCarros().add(c);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+    }//GEN-LAST:event_jt_comKeyPressed
+
     private void llenarcomboCompraCons() {
         cb_consenComprar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
         AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); //extension propia
@@ -1874,18 +1908,21 @@ public class MainLab8 extends javax.swing.JFrame {
         try {
             jt_com.setModel(new javax.swing.table.DefaultTableModel(new Object[][]{}, new String[]{"Marca", "Modelo", "Color", "Fecha", "Tipo"}));
             boolean esrec;
-            AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns"); 
+            AdminConsesionaria aCon = new AdminConsesionaria("./Consensionarias.cns");
             aCon.cargarArchivo();
             for (Consesionaria con : aCon.getListaConses()) {
                 if (cb_consenComprar.getSelectedItem().equals(con.getNombre())) {
                     for (Carro c : con.getListCarro()) {
+//                        if (con.getListCarro().isEmpty()) {
+////                            System.out.println("no tiene carros");
+//                        }
                         esrec = c.isMarcador();
                         Object[] row = {c.getMarca(), c.getModelo(), c.getColor(), c.getFechaFabric(), c.validMarcador(esrec)};
                         DefaultTableModel modelo = (DefaultTableModel) jt_com.getModel();
                         modelo.addRow(row);
                         jt_com.setModel(modelo);
                     }
-                    
+
                 }
 
             }
