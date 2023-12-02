@@ -153,6 +153,22 @@ public class MainLab8 extends javax.swing.JFrame {
         userLabel47 = new javax.swing.JLabel();
         cb_consenComprar = new javax.swing.JComboBox<>();
         jPanel12 = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel19 = new javax.swing.JPanel();
+        userLabel16 = new javax.swing.JLabel();
+        cb_Drag = new javax.swing.JComboBox<>();
+        jProgressBar1 = new javax.swing.JProgressBar();
+        jProgressBar2 = new javax.swing.JProgressBar();
+        jPanel20 = new javax.swing.JPanel();
+        cb_ORoad = new javax.swing.JComboBox<>();
+        userLabel13 = new javax.swing.JLabel();
+        jProgressBar3 = new javax.swing.JProgressBar();
+        jProgressBar4 = new javax.swing.JProgressBar();
+        jPanel21 = new javax.swing.JPanel();
+        userLabel15 = new javax.swing.JLabel();
+        cb_Circuito = new javax.swing.JComboBox<>();
+        jProgressBar5 = new javax.swing.JProgressBar();
+        jProgressBar6 = new javax.swing.JProgressBar();
         jPanel4 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
@@ -1170,6 +1186,12 @@ public class MainLab8 extends javax.swing.JFrame {
             .addComponent(jTabbedPane2)
         );
 
+        jTabbedPane3.setForeground(new java.awt.Color(255, 255, 255));
+        jTabbedPane3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jTabbedPane3StateChanged(evt);
+            }
+        });
         jTabbedPane3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTabbedPane3MouseClicked(evt);
@@ -1246,15 +1268,129 @@ public class MainLab8 extends javax.swing.JFrame {
 
         jPanel12.setBackground(new java.awt.Color(204, 204, 204));
 
+        jTabbedPane1.setForeground(new java.awt.Color(255, 255, 255));
+
+        jPanel19.setBackground(new java.awt.Color(102, 102, 102));
+
+        userLabel16.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel16.setText("CIRCUITO");
+
+        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
+        jPanel19.setLayout(jPanel19Layout);
+        jPanel19Layout.setHorizontalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jProgressBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(userLabel16)
+                    .addComponent(cb_Drag, 0, 810, Short.MAX_VALUE)
+                    .addComponent(jProgressBar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jPanel19Layout.setVerticalGroup(
+            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel19Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(userLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cb_Drag, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(104, 104, 104)
+                .addComponent(jProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(133, 133, 133)
+                .addComponent(jProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(136, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Drag", jPanel19);
+
+        jPanel20.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel20.setForeground(new java.awt.Color(153, 153, 153));
+
+        userLabel13.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel13.setText("CIRCUITO");
+
+        javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
+        jPanel20.setLayout(jPanel20Layout);
+        jPanel20Layout.setHorizontalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jProgressBar3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(userLabel13)
+                        .addComponent(cb_ORoad, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jPanel20Layout.setVerticalGroup(
+            jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel20Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(userLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cb_ORoad, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(114, 114, 114)
+                .addComponent(jProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(133, 133, 133)
+                .addComponent(jProgressBar4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(126, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Off-Road", jPanel20);
+
+        jPanel21.setBackground(new java.awt.Color(102, 102, 102));
+
+        userLabel15.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        userLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        userLabel15.setText("CIRCUITO");
+
+        javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
+        jPanel21.setLayout(jPanel21Layout);
+        jPanel21Layout.setHorizontalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jProgressBar5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, 808, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(userLabel15)
+                        .addComponent(cb_Circuito, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(60, Short.MAX_VALUE))
+        );
+        jPanel21Layout.setVerticalGroup(
+            jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel21Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(userLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cb_Circuito, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(117, 117, 117)
+                .addComponent(jProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(133, 133, 133)
+                .addComponent(jProgressBar6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(123, Short.MAX_VALUE))
+        );
+
+        jTabbedPane1.addTab("Circuito", jPanel21);
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 922, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 604, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                .addGap(0, 15, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 589, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jTabbedPane3.addTab("Simulacion", jPanel12);
@@ -1885,12 +2021,20 @@ public class MainLab8 extends javax.swing.JFrame {
                         }
 
                     }
+                    
                 }
+                aUs.escribirArchivo();
             }
 
         }
 
     }//GEN-LAST:event_jt_comKeyPressed
+
+    private void jTabbedPane3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jTabbedPane3StateChanged
+        llenarcomboCirc();
+        llenarcomboDrag();
+        llenarcomboORoad();
+    }//GEN-LAST:event_jTabbedPane3StateChanged
 
     private void llenarcomboCompraCons() {
         cb_consenComprar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
@@ -1900,6 +2044,45 @@ public class MainLab8 extends javax.swing.JFrame {
         for (Consesionaria con : aCon.getListaConses()) {
             modelo.addElement(con.getNombre());
 
+        }
+
+    }
+    
+    private void llenarcomboCirc() {
+        cb_Circuito.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+        AdminCircuito aCirc = new AdminCircuito("./Circuitos.cct");
+        aCirc.cargarArchivo();
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_Circuito.getModel();
+        for (Circuitos cir : aCirc.getListaCircuito()) {
+            if (cir.getTipodCarrera().equals("Circuito")) {
+                modelo.addElement(cir.getLocation());
+            }
+        }
+
+    }
+    
+    private void llenarcomboDrag() {
+        cb_Drag.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+        AdminCircuito aCirc = new AdminCircuito("./Circuitos.cct");
+        aCirc.cargarArchivo();
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_Drag.getModel();
+        for (Circuitos cir : aCirc.getListaCircuito()) {
+            if (cir.getTipodCarrera().equals("Drag")) {
+                modelo.addElement(cir.getLocation());
+            }
+        }
+
+    }
+    
+    private void llenarcomboORoad() {
+        cb_ORoad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{}));
+        AdminCircuito aCirc = new AdminCircuito("./Circuitos.cct");
+        aCirc.cargarArchivo(); //
+        DefaultComboBoxModel modelo = (DefaultComboBoxModel) cb_ORoad.getModel();
+        for (Circuitos cir : aCirc.getListaCircuito()) {
+            if (cir.getTipodCarrera().equals("OffRoad")) {
+                modelo.addElement(cir.getLocation());
+            }
         }
 
     }
@@ -2177,6 +2360,9 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JButton btn_Regresarmod6;
     private javax.swing.JButton btn_Regresarmod7;
     private javax.swing.JLabel buscarU;
+    private javax.swing.JComboBox<String> cb_Circuito;
+    private javax.swing.JComboBox<String> cb_Drag;
+    private javax.swing.JComboBox<String> cb_ORoad;
     private javax.swing.JComboBox<String> cb_TipoCarrera;
     private javax.swing.JComboBox<String> cb_consen;
     private javax.swing.JComboBox<String> cb_consenComprar;
@@ -2207,7 +2393,10 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel18;
+    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2215,6 +2404,12 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JProgressBar jProgressBar2;
+    private javax.swing.JProgressBar jProgressBar3;
+    private javax.swing.JProgressBar jProgressBar4;
+    private javax.swing.JProgressBar jProgressBar5;
+    private javax.swing.JProgressBar jProgressBar6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -2243,6 +2438,7 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTable jt_com;
@@ -2270,6 +2466,9 @@ public class MainLab8 extends javax.swing.JFrame {
     private javax.swing.JTextField txtf_nombreCon;
     private javax.swing.JLabel userLabel10;
     private javax.swing.JLabel userLabel11;
+    private javax.swing.JLabel userLabel13;
+    private javax.swing.JLabel userLabel15;
+    private javax.swing.JLabel userLabel16;
     private javax.swing.JLabel userLabel22;
     private javax.swing.JLabel userLabel3;
     private javax.swing.JLabel userLabel33;
